@@ -4,19 +4,18 @@
     <ul class="nav nav-pills flex mb-auto text-center text-white">
         <li class="">
             <a href="#" class="nav-link active text-dark" style="background-color: white" aria-current="page">
-                Data Siswa
+                Data Buku
             </a>
         </li>
         <li class="">
             <a href="#" class="nav-link active text-dark ms-2" style="background-color: #D9D9D9" aria-current="page">
-                Data Buku
+                Data Siswa   
             </a>
         </li>
     </ul>
-
     <ul class="nav nav-pills d-flex mb-auto nav text-center text-white">
         <li class="">
-            <a href="#" class="nav-link active text-dark mt-2" style="background-color: #93C6E7" aria-current="page">
+            <a href="/tambah-data-buku" class="nav-link active text-dark mt-2" style="background-color: #93C6E7" aria-current="page">
                 Tambah Data
             </a>
         </li>
@@ -35,33 +34,17 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach ($buku as $item)
                 <tr>
                     <th scope="row">1</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="btn text-white" style="background-color: #059C41">Edit</a>
+                    <td>{{$item->kode_buku}}</td>
+                    <td>{{$item->judul}}</td>
+                    <td>{{$item->penerbit}}</td>
+                    <td>{{$item->tahun_terbit}}</td>
+                    <td><a href="/tambah-data" class="btn text-white" style="background-color: #059C41">Edit</a>
                         <a href="" class="btn btn-danger">Delete</a></td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="btn text-white" style="background-color: #059C41">Edit</a>
-                        <a href="" class="btn btn-danger">Delete</a></td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="btn text-white" style="background-color: #059C41">Edit</a>
-                        <a href="" class="btn btn-danger">Delete</a></td>
-                </tr>
+                @endforeach
             </tbody>
         </table>
     </div>

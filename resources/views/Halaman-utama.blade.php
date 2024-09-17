@@ -13,13 +13,13 @@
         <nav class="navbar navbar-dark text-white text-bold" style="background-color: #93C6E7">
             <div class="container-fluid">
               <a class="navbar-brand fw-bold" href="#">
-                <img src="public\image\streamline-emojis--open-book.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <img src="/image/icons8-book-64.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
                 Perpustakaan
               </a>
             </div>
           </nav>
     </head>
-    <div id="main" class="d-flex">
+    <div id="main" class="d-flex flex">
         <div id="sidebar">
 
             <div class="d-flex flex-column flex-shrink-0 p-3 bg-white text-dark" style="width: 280px;
@@ -38,7 +38,7 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto text-white">
               <li class="dropdown-item-text">
-                <a href="#" class="nav-link active text-dark" style="background-color:#D9D9D9" aria-current="page">
+                <a href="/master-data" class="nav-link active text-dark" style="background-color:#D9D9D9" aria-current="page">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                   Master Data
                 </a>
@@ -60,7 +60,7 @@
 
           </div>
         </div>
-        <div id="isi-konten" style="width:100%;max-width: calc(100% - 280px);" class="container-fluid m-3">
+        <div id="isi-konten" style="width:100%;max-width: calc(100% - 280px);" style="background-color: rgb(230, 230, 230);" class="container-fluid m-3">
             @yield('konten-utama')
           </div>
     </div>

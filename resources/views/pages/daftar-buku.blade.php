@@ -12,7 +12,7 @@
         <div class="card-body d-flex justify-content-between align-items-center">
           <p class="card-text mb-0">Data Buku</p>
         </div>
-        <a href="/master-data" class="card-header text-dark" style="background-color: #CCD5AE; cursor: pointer;">More Info</a>
+        <a href="/master-data" class="card-header" style="background-color: #CCD5AE; cursor: pointer;">More Info</a>
       </div>
       <div class="card text-bg-primary mb-3 ms-3" style="width: 268px; height: 150px; background-color: #E1C78F">
         <div class="card-body d-flex justify-content-between align-items-center">

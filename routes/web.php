@@ -1,9 +1,16 @@
 <?php
 
+use App\Http\Controllers\BukuController;
+use App\Http\Controllers\DataBuku;
+use App\Http\Controllers\DataController;
+use App\Http\Controllers\pengunjung;
+use App\Models\buku;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('Halaman-utama');
+Route::get('/',[pengunjung::class,'pengunjung']);
+
+Route::get('/Halaman-pengunjung', function () {
+    return view('Halaman-pengunjung');
 });
 
 route::get('/dashboard',function(){
@@ -11,7 +18,12 @@ route::get('/dashboard',function(){
 });
 
 route::get('/master-data',function(){
-    return view('pages.master-data');
+    $buku = new buku();
+
+    $data = [
+        'buku'=>$buku->all()
+    ];
+    return view('pages.master-data',$data);
 });
 
 route::get('/laporan',function(){
@@ -22,10 +34,21 @@ route::get('/transaksi',function(){
     return view('pages.transaksi');
 });
 
-route::get('/login',function(){
-    return view('pages.login');
+route::get('/tampilanLogin',function(){
+    return view('pages.tampilanLogin');
 });
 
-route::get('/data-buku',function(){
-    return view('pages.data-buku');
+// route::get('/master-data',function(){
+//     return view('pages.master-data');
+// });
+
+route::get('/tambah-data-buku',[BukuController::class,'tambah']);
+route::post('/tambah-data-buku',[BukuController::class,'simpan']);
+
+route::get('/fiksi',function(){
+    return view('pages.fiksi');
+});
+
+route::get('/nonFiksi',function(){
+    return view('pages.nonFiksi');
 });
