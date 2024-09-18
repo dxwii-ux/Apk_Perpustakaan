@@ -38,12 +38,17 @@ route::get('/tampilanLogin',function(){
     return view('pages.tampilanLogin');
 });
 
+Route::get('/Edit/{Kode_buku}',[BukuController::class,'edit']);
+Route::post('/Edit/{Kode_buku}',[BukuController::class,'update']);
+
 // route::get('/master-data',function(){
 //     return view('pages.master-data');
 // });
 
 route::get('/tambah-data-buku',[BukuController::class,'tambah']);
 route::post('/tambah-data-buku',[BukuController::class,'simpan']);
+
+route::get('/Hapus/{kode_buku}',[BukuController::class,'Hapus']);
 
 route::get('/fiksi',function(){
     return view('pages.fiksi');
