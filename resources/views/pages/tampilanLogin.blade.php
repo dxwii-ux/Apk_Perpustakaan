@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         body {
-            background-image: url('/image/p.jpeg');
+            background-image: url('/image/pengadaan-buku-perpustakaan.jpg');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -59,9 +59,7 @@
                     <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Masuk
-
-            </button>
+            <button type="submit" class="btn btn-primary w-100">Masuk</button>
         </form>
     </div>
 

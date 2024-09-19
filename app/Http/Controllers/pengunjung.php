@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class pengunjung extends Controller
 {
     public function pengunjung(){
-        return view('Halaman-pengunjung');
+        return view('pages.dashboard');
     }
 }

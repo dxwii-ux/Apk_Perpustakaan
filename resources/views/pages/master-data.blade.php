@@ -3,12 +3,12 @@
 @section('konten-utama')
     <ul class="nav nav-pills flex mb-auto text-center text-white">
         <li class="">
-            <a href="#" class="nav-link active text-dark" style="background-color: white" aria-current="page">
+            <a href="master-data" class="nav-link active text-dark" style="background-color: white" aria-current="page">
                 Data Buku
             </a>
         </li>
         <li class="">
-            <a href="#" class="nav-link active text-dark ms-2" style="background-color: #D9D9D9" aria-current="page">
+            <a href="/data-siswa" class="nav-link active text-dark ms-2" style="background-color: #D9D9D9" aria-current="page">
                 Data Siswa
             </a>
         </li>

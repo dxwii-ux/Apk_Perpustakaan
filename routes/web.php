@@ -4,6 +4,7 @@ use App\Http\Controllers\BukuController;
 use App\Http\Controllers\DataBuku;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\pengunjung;
+use App\Http\Controllers\SiswaController;
 use App\Models\buku;
 use Illuminate\Support\Facades\Route;
 
@@ -13,9 +14,9 @@ Route::get('/Halaman-pengunjung', function () {
     return view('Halaman-pengunjung');
 });
 
-route::get('/dashboard',function(){
-    return view('pages.dashboard');
-});
+// route::get('/dashboard',function(){
+//     return view('pages.dashboard');
+// });
 
 route::get('/master-data',function(){
     $buku = new buku();
@@ -37,6 +38,12 @@ route::get('/transaksi',function(){
 route::get('/tampilanLogin',function(){
     return view('pages.tampilanLogin');
 });
+
+route::get('/tambah',[SiswaController::class,'tambah']);
+route::post('/tambah',[SiswaController::class,'simpan']);
+route::get('/edit{nis}',[SiswaController::class,'tampil']);
+route::post('/edit{nis}',[SiswaController::class,'update']);
+route::get('/delete{nis}',[SiswaController::class,'delete']);
 
 Route::get('/Edit/{Kode_buku}',[BukuController::class,'edit']);
 Route::post('/Edit/{Kode_buku}',[BukuController::class,'update']);
