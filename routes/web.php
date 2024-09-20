@@ -42,7 +42,7 @@ route::get('/tampilanLogin',function(){
 route::get('/data-siswa',[SiswaController::class,'pengunjung']);
 route::get('/tambah-data-siswa',[SiswaController::class,'tambah']);
 route::post('/tambah-data-siswa',[SiswaController::class,'simpan']);
-route::get('/Editt/{nis}',[SiswaController::class,'tampil']);
+route::get('/Editt   /{nis}',[SiswaController::class,'tampil']);
 route::post('/Editt/{nis}',[SiswaController::class,'update']);
 route::get('/Hapus{nis}',[SiswaController::class,'delete']);
 

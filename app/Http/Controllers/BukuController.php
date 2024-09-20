@@ -18,7 +18,7 @@ class BukuController extends Controller
 
         return redirect('/master-data');
     }
-
+  
     public function edit($Kode_buku){
         $buku = new buku();
         return view('pages.edit-data-buku', ['buku' => $buku->find($Kode_buku)]);
