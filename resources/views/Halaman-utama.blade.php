@@ -19,9 +19,9 @@
             </div>
           </nav>
     </head>
+    <div class="b-example-divider b-example-vr"></div>
     <div id="main" class="d-flex flex">
         <div id="sidebar">
-
             <div class="d-flex flex-column flex-shrink-0 p-3 bg-white text-dark" style="width: 280px;
           height:calc(100vh - 58px);" >
           <div class="container text-align-center text-center">
@@ -36,28 +36,46 @@
                 <span class="fs-3">Dwi Apriyani</span>
             </div>
             <hr>
-            <ul class="nav nav-pills flex-column mb-auto text-white">
-              <li class="dropdown-item-text">
-                <a href="/master-data" class="nav-link active text-dark" style="background-color:#D9D9D9" aria-current="page">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
                   Master Data
-                </a>
+                </button>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="/master-data" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Data Buku</a></li>
+                    <li><a href="/data-siswa" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Data Siswa</a></li>
+                  </ul>
+                </div>
               </li>
-              <li class="dropdown-item-text">
-                <a href="#" class="nav-link active text-dark" style="background-color:#D9D9D9" aria-current="page">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-                  Transaksi
-                </a>
+              <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                  Dashboard
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Weekly</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Monthly</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</a></li>
+                  </ul>
+                </div>
               </li>
-              <li class="dropdown-item-text">
-                <a href="#" class="nav-link active text-dark" style="background-color:#D9D9D9" aria-current="page">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-                  Laporan
-                </a>
-              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                  Orders
+                </button>
+                <div class="collapse" id="orders-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Processed</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a></li>
+                  </ul>
+                </div>
+              </li>          
             </ul>
             <hr>
-
           </div>
         </div>
         <div id="isi-konten" style="width:100%;max-width: calc(100% - 280px);" style="background-color: rgb(230, 230, 230);" class="container-fluid m-3">

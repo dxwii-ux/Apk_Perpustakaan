@@ -39,22 +39,17 @@ route::get('/tampilanLogin',function(){
     return view('pages.tampilanLogin');
 });
 
-route::get('/tambah',[SiswaController::class,'tambah']);
-route::post('/tambah',[SiswaController::class,'simpan']);
-route::get('/edit{nis}',[SiswaController::class,'tampil']);
-route::post('/edit{nis}',[SiswaController::class,'update']);
-route::get('/delete{nis}',[SiswaController::class,'delete']);
+route::get('/data-siswa',[SiswaController::class,'pengunjung']);
+route::get('/tambah-data-siswa',[SiswaController::class,'tambah']);
+route::post('/tambah-data-siswa',[SiswaController::class,'simpan']);
+route::get('/Editt/{nis}',[SiswaController::class,'tampil']);
+route::post('/Editt/{nis}',[SiswaController::class,'update']);
+route::get('/Hapus{nis}',[SiswaController::class,'delete']);
 
 Route::get('/Edit/{Kode_buku}',[BukuController::class,'edit']);
 Route::post('/Edit/{Kode_buku}',[BukuController::class,'update']);
-
-// route::get('/master-data',function(){
-//     return view('pages.master-data');
-// });
-
 route::get('/tambah-data-buku',[BukuController::class,'tambah']);
 route::post('/tambah-data-buku',[BukuController::class,'simpan']);
-
 route::get('/Hapus/{kode_buku}',[BukuController::class,'Hapus']);
 
 route::get('/fiksi',function(){
