@@ -59,7 +59,7 @@
                     <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Masuk</button>
+            <a href="{{ route("Halaman.ashboard") }}"><button type="submit" class="btn btn-primary w-100">Masuk</button></a>
         </form>
     </div>
 

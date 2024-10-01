@@ -26,6 +26,10 @@
             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="judul" value="{{ $buku->judul  }}">
         </div>
         <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Penulis</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="penerbit" value="{{ $buku->penulis }}">
+        </div>
+        <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Penerbit</label>
             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="penerbit" value="{{ $buku->penerbit }}">
         </div>

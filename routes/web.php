@@ -12,11 +12,11 @@ Route::get('/',[pengunjung::class,'pengunjung']);
 
 Route::get('/Halaman-pengunjung', function () {
     return view('Halaman-pengunjung');
-});
+})->name(name:"Halaman.dashboard");
 
-// route::get('/dashboard',function(){
-//     return view('pages.dashboard');
-// });
+route::get('/dashboard',function(){
+    return view('pages.dashboard');
+});
 
 route::get('/master-data',function(){
     $buku = new buku();
@@ -42,9 +42,9 @@ route::get('/tampilanLogin',function(){
 route::get('/data-siswa',[SiswaController::class,'pengunjung']);
 route::get('/tambah-data-siswa',[SiswaController::class,'tambah']);
 route::post('/tambah-data-siswa',[SiswaController::class,'simpan']);
-route::get('/Editt   /{nis}',[SiswaController::class,'tampil']);
+route::get('/Editt/{nis}',[SiswaController::class,'tampil']);
 route::post('/Editt/{nis}',[SiswaController::class,'update']);
-route::get('/Hapus{nis}',[SiswaController::class,'delete']);
+route::get('/HapusSiswa/{nis}',[SiswaController::class,'Hapuss']);
 
 Route::get('/Edit/{Kode_buku}',[BukuController::class,'edit']);
 Route::post('/Edit/{Kode_buku}',[BukuController::class,'update']);

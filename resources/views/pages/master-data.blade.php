@@ -1,6 +1,7 @@
 @extends('Halaman-utama')
 
 @section('konten-utama')
+    <h3 class="text-center">Data Buku</h3>
     <ul class="nav nav-pills d-flex mb-auto nav text-center text-white">
         <li class="">
             <a href="/tambah-data-buku" class="nav-link active text-dark mt-2" style="background-color: #93C6E7"
@@ -17,6 +18,7 @@
                     <th scope="col">NO</th>
                     <th scope="col">kode buku</th>
                     <th scope="col">judul</th>
+                    <th scope="col">penulis</th>
                     <th scope="col">penerbit</th>
                     <th scope="col">tahun terbit</th>
                     <th scope="col">kelola</th>
@@ -25,9 +27,10 @@
             <tbody>
                 @foreach ($buku as $item)
                     <tr>
-                        <th scope="row">1</th>
+                        <th scope="row">{{ $loop->iteration }}</th>
                         <td>{{ $item->kode_buku }}</td>
                         <td>{{ $item->judul }}</td>
+                        <td>{{ $item->penulis }}</td>
                         <td>{{ $item->penerbit }}</td>
                         <td>{{ $item->tahun_terbit }}</td>
                         <td>

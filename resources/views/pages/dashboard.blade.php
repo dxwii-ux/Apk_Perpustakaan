@@ -3,9 +3,9 @@
 @section('konten-utama')
 <div class="container">
     <div class="row">
-        <div class="col-12 mb-2 d-flex">
+        {{-- <div class="col-12 mb-2 d-flex">
             <p class="text-uppercase fw-bold">Dashboard</p>
-        </div>
+        </div> --}}
     </div>
     <div class="d-flex container">
     <div class="card text-bg-primary mb-2" style="width: 268px; height: 150px; background-color: #E0E5B6">

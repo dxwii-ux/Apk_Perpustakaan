@@ -12,4 +12,6 @@ class Siswa extends Model
     protected $guarded =[];
     protected $primaryKey ='nis';
     public $incrementing = false;
+    protected $keyType ='string';
+    public $timestamp ='false';
 }

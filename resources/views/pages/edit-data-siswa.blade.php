@@ -33,6 +33,10 @@
             <label for="" class="form-label">No Telepon</label>
             <input type="text" class="form-control" value="{{ $dataSiswa->no_telp }}" name="no_telp">
         </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Kode Kelas</label>
+            <input type="text" class="form-control" value="{{ $dataSiswa->kode_kelas }}" name="kode_kelas">
+        </div>
         <button type="submit" class="btn btn-primary text-white">Simpan</button>
         <button type="submit" class="btn text-white" style="background-color: red">Batal</button>
     </form>

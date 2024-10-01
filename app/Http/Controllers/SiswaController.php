@@ -22,6 +22,7 @@ class SiswaController extends Controller
             'nama'=>'required',
             'alamat'=>'required',
             'no_telp'=>'max:13',
+            'kode_kelas'=>'required',
         ]);
         $siswa = new Siswa();
         $siswa->create($request->all());
@@ -44,9 +45,13 @@ class SiswaController extends Controller
         $siswa->find($nis)->update($request->all());
         return redirect('/data-siswa');
     }
-    public function delete(Request $nis){
-        $siswa = new Siswa();
-        $siswa->find($nis)->delete();
-        return redirect('/data-siswa');
+    public function Hapuss($nis)
+{
+    $siswa = Siswa::find($nis);
+         if ($siswa) {
+        $siswa->delete();
     }
+    return redirect('/data-siswa');
 }
+
+}  

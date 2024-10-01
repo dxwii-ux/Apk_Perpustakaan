@@ -37,14 +37,19 @@
             </div>
             <hr>
             <ul class="list-unstyled ps-0">
+              <li class="nav-item">
+                <a href="/dashboard" class="nav-link active text-dark" aria-current="page">
+                    Dashboard
+                </a>
+            </li>
               <li class="mb-1">
                 <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
                   Master Data
                 </button>
                 <div class="collapse show" id="home-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="/master-data" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Data Buku</a></li>
-                    <li><a href="/data-siswa" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Data Siswa</a></li>
+                    <li><a href="/master-data" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-dark">Data Buku</a></li>
+                    <li><a href="/data-siswa" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-dark">Data Siswa</a></li>
                   </ul>
                 </div>
               </li>
@@ -54,10 +59,8 @@
                 </button>
                 <div class="collapse" id="dashboard-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Weekly</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Monthly</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-dark">Overview</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-dark">Weekly</a></li>
                   </ul>
                 </div>
               </li>
@@ -67,10 +70,8 @@
                 </button>
                 <div class="collapse" id="orders-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Processed</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-dark">New</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-dark">Processed</a></li>
                   </ul>
                 </div>
               </li>          
